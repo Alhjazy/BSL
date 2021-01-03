@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Supplier extends Model
+{
+    use HasFactory;
+    protected $fillable = ['name','email','phone_number','tax_id','bank_account_name',
+                           'bank_account_number','bank_account_iban','remarks','description','status',
+    ];
+
+}
